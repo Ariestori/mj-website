@@ -1,0 +1,89 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('images/wallp.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 87px 100px; /* Adjusted margin to make the body wider */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px; /* Adjusted width */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(189, 114, 212, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #6934a1; /* Purple color inspired by Ghibli */
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.labelStyle {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #daa0d5; /* Pink color inspired by Ghibli */
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"],
+button[type="button"],
+a.forgot {
+    display: inline-block;
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #aa75a6; /* Purple color inspired by Ghibli */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover,
+a.forgot:hover {
+    background-color: #6934a1; /* Darker purple color on hover */
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+a {
+    color: #9868a0; /* Lighter purple color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8f7aa5; /* Darker purple color on hover for links */
+}

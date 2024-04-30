@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="js/numbers.js"></script>
+    <script src="js/operation.js"></script>
+</head>
+
+<body>
+    <div class="post-container">
+        <div class="flex-container">
+            <h2>Simple Calculator</h2>
+        </div>
+        <div class="flex-container">
+            <input id="number-input" type="text" value="0" readonly>
+            <input id="operation-input" type="text" hidden>
+            <input id="previous" type="text" value="0" hidden>
+        </div>
+        <div class="flex-container">
+            <button class="button" onclick="number(1)">1</button>
+            <button class="button" onclick="number(2)">2</button>
+            <button class="button" onclick="number(3)">3</button>
+        </div>
+
+        <div class="flex-container">
+            <button class="button" onclick="number(4)">4</button>
+            <button class="button" onclick="number(5)">5</button>
+            <button class="button" onclick="number(6)">6</button>
+        </div>
+
+        <div class="flex-container">
+            <button class="button" onclick="number(7)">7</button>
+            <button class="button" onclick="number(8)">8</button>
+            <button class="button" onclick="number(9)">9</button>
+        </div>
+
+        <div class="flex-container">
+            <button class="button" onclick="operation('+')">+</button>
+            <button class="button" onclick="operation('-')">-</button>
+            <button class="button" onclick="operation('*')">*</button>
+            <button class="button" onclick="operation('/')">/</button>
+        </div>
+
+        <div class="flex-container">
+            <button class="button" onclick="number(0)">0</button>
+            <button class="button" onclick="equal()">=</button>
+            <button class= "Cbutton" class="Cbutton" onclick="clearInput('C')">C</button>
+        </div>
+        
+    </div>
+    </div>
+</body>
+
+</html>

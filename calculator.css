@@ -1,0 +1,74 @@
+.body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.h1 {
+    margin-bottom: 20px;
+}
+
+#number-input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#previous {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.Cbutton {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: bisque;
+    border: none;
+    border-radius: 10px;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: bisque;
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgb(255, 87, 57);
+}
+.Cbutton:hover {
+    background-color: rgb(156, 241, 247);
+}
+.button:active {
+background-color: rgb(206, 99, 49);
+}
+.post-container{
+    background-color: rgb(38, 83, 122);
+    border-radius: 10px;
+    margin-left: 535px;
+    width: fit-content;
+    margin-top: 50px;
+
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    height: 55px;
+    width: 300px;
+    flex-direction: row;
+    border: 6px;
+}
+

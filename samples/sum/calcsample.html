@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {#ffbfd5
+            margin: 10px 0;
+        }
+
+        input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>CALCULATOR</h2>
+        <p>First Number:</p>
+        <input type="text" id="firstNum">
+        <p>Second Number:</p>
+        <input type="text" id="secondNum">
+        <button type="button" onclick="sum()">Compute</button>
+        <p class="result">The sum is: <span id="sumResult"></span></p>
+        <p class="result">The difference is: <span id="differenceResult"></span></p>
+        <p class="result">The product is: <span id="productResult"></span></p>
+        <p class="result">The quotient is: <span id="quotientResult"></span></p>
+    </div>
+
+    <script>
+        function sum() {
+            var firstNum = Number(document.getElementById('firstNum').value);
+            var secondNum = Number(document.getElementById('secondNum').value);
+            document.getElementById('sumResult').innerText = firstNum + secondNum;
+            document.getElementById('differenceResult').innerText = firstNum - secondNum;
+            document.getElementById('productResult').innerText = firstNum * secondNum;
+            document.getElementById('quotientResult').innerText = firstNum / secondNum;
+        }
+    </script>
+</body>
+</html>

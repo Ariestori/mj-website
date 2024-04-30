@@ -1,0 +1,543 @@
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Light pastel background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px; /* Add padding to prevent content from touching the edges */
+    box-sizing: border-box;
+    background-color: yellow; /* Test background color */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #4a90e2; /* Blue title color */
+}
+
+/* Navbar */
+.navbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #777; /* Dark gray link color */
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #4a90e2; /* Blue hover color */
+}
+
+/* Content */
+.content {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px auto; /* Adjust margin as needed */
+    padding: 20px;
+    background-color: #fff; /* White content background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+    position: sticky; /* Sticky position */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Align to the left edge of the viewport */
+    width: 100%; /* Full width */
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(247, 247, 25); /* Light pastel background */
+    color: #000000; /* Dark gray text color */
+    z-index: 100; /* Ensure it's above other content */
+}
+
+/*portfolio*/
+
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+}
+
+.project-info p {
+    margin-bottom: 10px;
+}
+
+.project-info a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4a90e2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-info a:hover {
+    background-color: #357dbd;
+}
+.card {
+    width: 190px;
+    height: 254px;
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(231, 248, 74, 0.3);
+    left: 200px;
+  }
+  
+  /* Background images for cards */
+#c1 {
+  background-image: url('images/kwatro.jpg');
+  background-size: cover;
+}
+
+#c2 {
+  background-image: url('images/dos.jpg');
+  background-size: cover;
+}
+
+#c3 {
+  background-image: url('images/tres.jpg');
+  background-size: cover;
+}
+
+#c4 {
+  background-image: url('images/uno.jpg');
+  background-size: cover;
+}
+
+#c5 {
+  background-image: url('images/wp.jpg');
+  background-size: cover;
+}
+
+#c6 {
+  background-image: url('images/vices.jpg');
+  background-size: cover;
+}
+
+/* Hover transformations for cards in the main container */
+.main:hover #c1 {
+  transform: translateX(50px) translateY(10px) rotate(-40deg);
+}
+
+.main:hover #c2 {
+  transform: translateX(0) translateY(5px) rotate(-30deg);
+}
+
+.main:hover #c3 {
+  transform: translateX(50px) translateY(2px) rotate(-20deg);
+}
+
+.main:hover #c4 {
+  transform: translateX(100px) rotate(-10deg);
+}
+
+/* Hover transformations for cards in the second container */
+.main:hover #c5 {
+  transform: translateX(0) translateY(5px) rotate(-30deg);
+}
+
+.main:hover #c6 {
+  transform: translateX(50px) translateY(2px) rotate(-20deg);
+}
+
+/* Hover transformations for individual cards */
+#c1:hover {
+  transform: translateX(70px) rotate(0deg) !important;
+}
+
+#c2:hover {
+  transform: translateX(-120px) rotate(0deg) !important;
+}
+
+#c3:hover {
+  transform: translateX(-135px) rotate(0deg) !important;
+}
+
+#c4:hover {
+  transform: translateX(60px) rotate(0deg) !important;
+}
+
+#c5:hover {
+  transform: translateX(50px) rotate(0deg) !important;
+}
+
+#c6:hover {
+  transform: translateX(-140px) rotate(0deg) !important;
+}
+
+#c7:hover {
+  transform: translateX(-190px) rotate(0deg) !important;
+}
+
+#c8:hover {
+  transform: translateX(-240px) rotate(0deg) !important;
+}
+
+  
+
+  .main {
+    display: grid;
+    height: 50vmax;
+    place-items: center;
+    background-color: #000000; /* Change the background color to a desired color */
+}
+
+/* Document Button */
+.Documents-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 45px;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 83);
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.folderContainer {
+    width: 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.fileBack {
+    z-index: 1;
+    width: 80%;
+    height: auto;
+}
+
+.filePage {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+}
+
+.fileFront {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.95;
+    transform-origin: bottom;
+    transition: all 0.3s ease-out;
+}
+
+.text {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.Documents-btn:hover .filePage {
+    transform: translateY(-5px);
+}
+
+.Documents-btn:hover {
+    background-color: rgb(58, 58, 94);
+}
+
+.Documents-btn:active {
+    transform: scale(0.95);
+}
+
+.Documents-btn:hover .fileFront {
+    transform: rotateX(30deg);
+}
+
+
+.featured {
+  margin-top: 85px;
+  margin-bottom: auto;
+}
+
+.featured2 {
+  margin-top: 60px;
+  margin-bottom: auto;
+}
+
+
+
+
+/*social css*/
+
+.content {
+  padding: 20px;
+  background-color: #fff; /* White content background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.button {
+  width: 45px;
+  height: 45px;
+  background-color: #3b5998;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+ 0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+ 0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+  transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+.button::before {
+  background-color: transparent;
+  content: "f";
+  font-size: 1.6em;
+  font-weight: 700;
+  color: white;
+  z-index: 5;
+  transition: all .3s;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.button::after {
+  content: "acebook";
+  background-color: transparent;
+  font-size: 0;
+  opacity: 0;
+  font-weight: 700;
+  color: white;
+  z-index: 5;
+  transition: all .3s;
+  transform: translateX(60px);
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.button a {
+  text-decoration: none;
+  color: transparent;
+  pointer-events: none;
+}
+
+
+.button:hover {
+  width: 160px;
+  border-radius: 30px;
+}
+
+.button:hover::after {
+  opacity: 1;
+  font-size: 1.6em;
+  transform: translateX(0px);
+}
+
+.button:hover .shine {
+  transform: translate(-70px ,10px);
+}
+
+
+
+/* Instagram Button */
+
+
+.Btn {
+border: none;
+border-radius: 50%;
+width: 45px;
+height: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition-duration: .4s;
+cursor: pointer;
+position: relative;
+background: #f09433;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+overflow: hidden;
+}
+
+.svgIcon {
+transition-duration: .3s;
+}
+
+.svgIcon path {
+fill: white;
+}
+
+.text {
+position: absolute;
+color: rgb(255, 255, 255);
+width: 120px;
+font-weight: 600;
+opacity: 0;
+transition-duration: .4s;
+}
+
+.Btn:hover {
+width: 110px;
+transition-duration: .4s;
+border-radius: 30px;
+}
+
+.Btn:hover .text {
+opacity: 1;
+transition-duration: .4s;
+}
+
+.Btn:hover .svgIcon {
+opacity: 0;
+transition-duration: .3s;
+}
+
+/* Twitter Button */
+.btn-twitter {
+border: none;
+background: transparent;
+padding: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+color: rgb(40, 144, 241);
+transition: color 0.4s;
+}
+
+.btn-twitter svg {
+width: 18px;
+height: auto;
+fill: currentColor;
+margin-right: 5px;
+}
+
+.btn-twitter span {
+font-size: 14px;
+}
+
+.btn-twitter:hover {
+color:  rgb(198, 206, 212);
+}
+
+.btn-twitter path {
+transition: fill 0.3s;
+}
+
+.btn-twitter:hover path {
+fill:  rgb(40, 144, 241);
+}
+
+
+/*about Css*/
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #4a90e2; /* Blue title color */
+}
+
+.content {
+  padding: 20px;
+  background-color: #fff; /* White content background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  display: flex;
+  margin: 0 auto;
+  width: 200px; /* Adjust the width as needed */
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  color: #4a90e2; /* Blue heading color */
+  margin-bottom: 10px;
+}
+
+.content p {
+  line-height: 1.6;
+}
+
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+.content ul li strong {
+  font-weight: bold;
+  color: #4a90e2; /* Blue strong color */
+}
+
+.content ul li a {
+  color: #777; /* Dark gray link color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.content ul li a:hover {
+  color: #4a90e2; /* Blue hover color */
+}
